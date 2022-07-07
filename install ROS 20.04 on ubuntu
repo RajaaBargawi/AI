@@ -1,0 +1,27 @@
+ROS install algorithm on Ubuntu
+
+1- Download virtualbox or VMware
+2- Download ubuntu on virtule box or VMware
+3- Open Ubuntu, then open the Terminal from Ubuntu
+4- Open ROS.org, then choose version 20.04, then choose Ubuntu
+5- After opening the ubuntu page on the ros.org website, copy the following commands and paste them into the terminal one by one
+First: sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main"> /etc/apt/sources.list.d/ros-latest.list "
+Second: sudo apt install curl
+Third: curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+Fourth: sudo apt update
+Fifth: sudo apt install ros-noetic-desktop-full
+Sixth: sudo apt install ros-noetic-desktop
+Seventh: sudo apt install ros-noetic-ros-base
+Eighth: sudo apt install ros-noetic-PACKAGE
+Ninth: sudo apt install ros-noetic-slam-gmapping
+Tenth: apt search ros-noetic
+Eleventh: source /opt/ros/noetic/setup.bash
+Twelfth: echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+Thirteenth: echo "source /opt/ros/noetic/setup.zsh" >> ~/.zshrc
+source ~/.zshrc
+Fourteenth: sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+Fifteenth: sudo apt install python3-rosdep
+And finally to configure ros on Ubuntu
+Sixteenth: sudo rosdep init
+rosdep update
